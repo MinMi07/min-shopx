@@ -1,4 +1,7 @@
-export const apiUrl = process.env.NODE_ENV !== 'production' ? 'http://localhost:3000/api' : 'someThing';
+export const apiUrl =
+  process.env.NODE_ENV !== 'production'
+    ? 'http://localhost:3000/api'
+    : 'https://peaceful-fortress-76879.herokuapp.com/api';
 
 export const LOCAL_STORAGE_TOKEN_NAME = 'tokenStorage';
 
