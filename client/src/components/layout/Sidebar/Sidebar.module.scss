@@ -1,0 +1,35 @@
+.sidebar {
+  min-width: 370px;
+
+  ul {
+    margin-left: 20px;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 10px 10px;
+  }
+
+  li:first-child {
+    margin-bottom: 20px;
+  }
+
+  li:first-child a {
+    opacity: 1;
+    font-weight: 600;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: var(--text_color);
+    font-size: 1.6rem;
+    opacity: 0.5;
+    transition: all 0.3s linear;
+  }
+
+  li:hover a {
+    opacity: 1;
+    transform: translateX(1rem);
+  }
+}

@@ -1,0 +1,233 @@
+:root {
+    --primary_collor: #5800FF;
+    --disable_collor: rgb(160, 157, 157);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modalAlter { 
+    display: none;
+}
+
+.activeModalAlter{
+    position: fixed;
+    top: 0;
+    right: 0;
+    line-height: 4rem;
+    font-size: 1.6rem;
+    padding: 8px;
+    margin: 8px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 10px 5px 50px rgba(0, 0, 0, 0.432);
+    /* transform: translateX(calc(100% + 8px)); */
+    animation: fadeIn linear 2.5s forwards;
+    display: block;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(calc(100% + 8px));
+    }
+    20% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    75% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(calc(100% + 8px));
+    }
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.flex_align_justifile_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disable_text {
+    color: (--disable_collor) !important;
+}
+
+.auth {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.auth_left {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-image: url("../../asset/images/loginImage.jpg");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.auth_right {
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to top, #5800FF, #087fd4);
+    text-align: center;
+}
+
+.auth_right_width {
+    width: 50%;
+}
+
+.head_auth {
+    flex-direction: column;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.logo_avatar {
+    height: 12rem;
+    width: 16rem;
+}
+
+.head_auth_img {
+    font-size: 6.4rem;
+}
+
+.auth_content {
+}
+
+
+.form_auth {
+    flex-direction: column;
+}
+
+#form_auth div {
+    margin: 6px auto;
+    /* overflow: hidden; */
+}
+
+.auth_item {
+    margin-top: 1.6rem;
+    width: 100%;
+    height: 4.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px; 
+}
+
+.auth_item input {
+    display: inline-block;
+}
+
+.form-control-imput {
+    flex: 1;
+    background-color: transparent;
+    outline: none;
+    margin: 8px 0;
+    padding: 1rem;
+    height: 0.4rem;
+    border: none;
+}
+
+.auth_item_icon {
+    cursor: pointer;
+    position: relative;
+    color: #5800FF;
+    font-size: 1.6rem;
+    margin-right: 8px;
+}
+
+#error_message {
+    font-size: 1.4rem;
+    color: rgb(226, 65, 65);
+    text-align: start;
+}
+
+.auth_option{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.7rem 0.8rem 0;
+    color: white;
+}
+
+.auth_option a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.btn_auth {
+    margin: 1.6rem 0;
+    width: 100%;
+    height: 4.3rem;
+    background-color: white;
+    color: #5800FF;
+    font-weight: 600;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+
+.auth_google_register {
+    display: flex;
+    flex-direction: row;
+}
+
+.auth_google, .auth_register {
+    flex: 1;
+    display: block;
+    width: 100%;
+    margin: 16px auto;
+    padding: 8px 0;
+    font-size: 1.8rem;
+    color: rgb(160, 157, 157);
+    text-decoration: none;
+    outline: none;
+    border: 1px solid rgb(160, 157, 157);
+    border-radius: 8px;
+}
+
+.auth_google {
+    margin-right: 0.8rem;
+}
+
+.auth_register {
+    margin-left: 0.8rem;
+}
+
+.auth_login  {
+    margin-top: 0.8rem;
+}
+
+@media screen and (max-width: 60rem) {
+    .auth_left { 
+        display: none;
+    }
+
+    .auth_right { 
+        width: 100%;
+    }
+}

@@ -1,0 +1,105 @@
+.header{
+    background: #f1f2f4;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+.header img{
+    height: 1.5rem;
+    padding: 0 30px 0 30px;
+    position: relative;
+    transform: translateY(-10%);
+}
+.header p{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.navigation{
+    display: flex;
+    z-index: 2;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: white;
+    position:sticky;
+    position: -webkit-sticky;
+    top: 0;
+    box-shadow: 0 2px 5px var(--background-color);
+}
+
+
+.logo_Shop{
+    height: 60px;
+    display: block;
+    margin-left: 3px;
+}
+
+.navigation_cennter li{
+    float: left;
+    list-style: none;
+}
+
+.navigation_cennter li a{
+    position: relative;
+    display:  block;
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text_color);
+}
+
+.navigation_cennter li a:after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    border-bottom: 0.175rem solid black;
+    transition: 0.3s linear;
+    transform: translateY(5px);
+}
+
+.navigation_cennter li a:hover:after{
+    width: 100%;
+}
+
+
+.navigation_right_icon{
+    margin: 0 10px;
+    font-size: 2rem;
+    color: var(--text_color);
+}
+
+.icon_search {
+    font-size: 1.8rem;
+    display: inline-block;
+    transform: translateY(17%);
+    cursor: pointer;
+}
+
+.logout {
+    margin-right: 16px;
+}
+
+.cart_icon{
+    position: relative;
+}
+
+.cartNotifi {
+    padding: 2px 8px;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: gray;
+    color: var(--white);
+    border-radius: 9999px;
+    transform: translate( 25%,-25%);
+    display: none;
+}

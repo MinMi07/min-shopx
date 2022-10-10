@@ -1,0 +1,63 @@
+.wrapper {
+    position: fixed;
+    top: 16px;
+    right: 0;
+    z-index: 999;
+    display: inline-block;
+    min-width: 200px;
+    padding: 8px;
+    margin: 1.6rem 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgb(148, 147, 147);
+    transform: translateX(100%);
+    animation: fadIn 4s linear;
+    
+    @keyframes fadIn {
+        0%{
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        25%{
+            transform: translateX(-16px);
+            opacity: 1;
+        }
+        50%{
+            transform: translateX(-16px);
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(100% );
+            opacity: 0;
+        }
+    }
+    
+}
+
+.wrapper span {
+    padding: 0 0.8rem;
+}
+.infor {
+    border-left: 8px solid #3daac6;
+    color: #3daac6;
+}
+
+.success {
+    border-left: 8px solid #4ba155;
+    color: #4ba155;
+
+}
+
+.warning {
+    border-left: 8px solid #e0954b;
+    color: #e0954b;
+
+}
+
+.error {
+    border-left: 8px solid #c84243;
+    color: #c84243;
+
+}

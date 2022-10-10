@@ -1,0 +1,68 @@
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "Minh",
+    "password": "Minh123"
+}
+
+###
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "Phu",
+    "password": "Phu123"
+}
+
+###
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "Viet",
+    "password": "Viet123"
+}
+
+
+###
+POST http://localhost:3000/api/post
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzI1YTYxN2FiNmUwMzEzZDFlZjlkMjYiLCJpYXQiOjE2NjM0MjcwMTZ9.Scan2_-mn0dGZKOlMn8NmhSij6AjKJOXqx2PRCL7CO0
+
+{
+    "title": "HTML",
+    "decription": "Học ngày nào",
+    "url": "w3school.org",
+    "status": "TO LEARN"
+}
+
+###
+GET http://localhost:3000/api/post
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzI1YTYxN2FiNmUwMzEzZDFlZjlkMjYiLCJpYXQiOjE2NjM0MjcwMTZ9.Scan2_-mn0dGZKOlMn8NmhSij6AjKJOXqx2PRCL7CO0
+
+###
+PUT http://localhost:3000/api/post/6325eb6c08557c169ab5d6e5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzI1YTYxN2FiNmUwMzEzZDFlZjlkMjYiLCJpYXQiOjE2NjM0MjcwMTZ9.Scan2_-mn0dGZKOlMn8NmhSij6AjKJOXqx2PRCL7CO0
+
+{
+    "title": "CSS",
+    "decription": "Học ngày nào",
+    "url": "w3school.org",
+    "status": "LEARNED"
+}
+
+###
+DELETE  http://localhost:3000/api/post/6325eb6c08557c169ab5d6e5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzI1YTYxN2FiNmUwMzEzZDFlZjlkMjYiLCJpYXQiOjE2NjM0MjcwMTZ9.Scan2_-mn0dGZKOlMn8NmhSij6AjKJOXqx2PRCL7CO0
+
+###
+POST http://localhost:3000/api/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzMxMTVmMWU4ZGIxOWM0NDE0N2VjNDgiLCJpYXQiOjE2NjQyNzQzODh9.tzddfGZ1P5HK7TfZMxLYw5JlDLVZcPjdnXUZF6M6XKM
+
+{
+    "id": "DM1",
+    "title": "Giày nam"
+} 

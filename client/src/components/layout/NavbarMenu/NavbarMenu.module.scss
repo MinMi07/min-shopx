@@ -1,0 +1,214 @@
+.header {
+  background: #f1f2f4;
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  height: 1.5rem;
+  padding: 0 30px 0 30px;
+  position: relative;
+  transform: translateY(-10%);
+}
+.header p {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.navigation {
+  display: flex;
+  z-index: 2;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  background-color: white;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  box-shadow: 0 2px 5px var(--background-color);
+}
+
+.logo_Shop {
+  padding-right: 112px;
+  height: 60px;
+  display: block;
+  margin-left: 3px;
+}
+
+.navigation_center {
+  // display: inline-block;
+}
+
+.navigation_center li {
+  float: left;
+  list-style: none;
+}
+
+.navigation_center li a {
+  position: relative;
+  display: block;
+  margin: 0 20px;
+  cursor: pointer;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text_color);
+}
+
+.navigation_center li a:after {
+  position: absolute;
+  content: '';
+  width: 0%;
+  left: 0;
+  bottom: 0;
+  border-bottom: 0.175rem solid black;
+  transition: 0.3s linear;
+  transform: translateY(5px);
+}
+
+.navigation_center li a:hover:after {
+  width: 100%;
+}
+
+.navigation_right {
+  display: flex;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.navigation_right_icon {
+  margin: 0 10px;
+  font-size: 2rem;
+  color: var(--text_color);
+}
+
+.logout {
+  margin-right: 16px;
+}
+
+.cart_icon {
+  position: relative;
+}
+
+.cartNotifi {
+  padding: 2px 8px;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: gray;
+  color: var(--white);
+  border-radius: 9999px;
+  transform: translate(25%, -25%);
+  display: none;
+}
+
+.btnAuth {
+  color: var(--text_color);
+  margin-right: 24px;
+}
+
+.btnCloseMenu {
+  color: var(--white);
+  background-color: transparent;
+  margin-left: 20px;
+}
+
+.icon_menu {
+  display: none;
+}
+
+// MOBILE
+// @media only screen and (max-width: 25.875em)  {
+@media only screen and (max-width: 63.938em) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .icon_menu {
+    display: block;
+  }
+
+  .navigation_left {
+    display: none;
+  }
+
+  .navigation_center {
+    display: none;
+    width: 100%;
+    background-color: gray;
+    padding: 20px 0;
+    z-index: 10;
+    animation: fadeInMenu linear 0.3s;
+  }
+
+  .navigation_center li a:after {
+    content: none;
+  }
+
+  @keyframes fadeInMenu {
+    from {
+      width: 0%;
+      opacity: 0.2;
+    }
+    to {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  .navigation_center ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navigation_center li {
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  .navigation_center li a {
+    color: var(--white);
+    background-color: transparent;
+  }
+
+  .navigation_center li a:after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    border-bottom: 0.175rem solid transparent;
+  }
+
+  .navigation_right {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+
+    a:last-child {
+      margin-right: -30px;
+    }
+    .nameUser {
+      display: none;
+    }
+  }
+}
+
+// @media only screen and (min-width: 25.8751em) and (max-width: 46.188em) {
+// }
+// // TABLE
+
+// @media only screen and (min-width: 46.25em) and (max-width: 63.938em) {
+// }
+
+// // PC
+// @media only screen and (min-width: 64em) {
+// }

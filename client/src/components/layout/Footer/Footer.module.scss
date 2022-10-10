@@ -1,0 +1,104 @@
+:root {
+  --boder-color: #f1f2f4;
+}
+
+.hr-footer {
+  width: 80%;
+  margin: 0px auto;
+  border-bottom: 1px solid var(--boder-color);
+}
+
+.footer {
+  width: 80%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto auto;
+  margin: 0px auto;
+  padding: 40px 0;
+}
+
+.footer .footer_suport_service ul li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.footer .footer_suport_service ul li a {
+  text-decoration: none;
+  display: block;
+  margin: 20px 0;
+  font-size: 1.6rem;
+  color: var(--text_color);
+  opacity: 0.5;
+  transition: all 0.2s linear;
+}
+
+.footer .footer_suport_service ul li:hover a {
+  opacity: 1;
+}
+
+.footer .footer_suport_service ul li:first-child a {
+  opacity: 1;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.footer_information_shop .footer_logoShop {
+  width: 170px;
+  transform: translateX(-20%);
+}
+
+.footer .footer_information_shop li table tr a {
+  margin: 10px 0;
+}
+
+.footer_suport_service-frame {
+  display: inline-block;
+}
+
+.footer .footer_suport {
+}
+.footer .footer_service {
+}
+.footer .footer_social {
+}
+
+.list-icon-footer {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2.6rem;
+  justify-content: space-between;
+}
+
+.list-icon-footer:nth-child(1):hover {
+  opacity: 1;
+}
+
+.oppacityText {
+  transition: all 0.2s linear;
+  opacity: 0.5;
+}
+
+.oppacityText:hover {
+  opacity: 1;
+}
+
+// responsive
+// MOBILE
+@media only screen and (max-width: 25.875em) {
+  .footer {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (min-width: 25.8751em) and (max-width: 46.188em) {
+}
+// TABLE
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.938em) {
+}
+
+// PC
+@media only screen and (min-width: 64em) {
+}

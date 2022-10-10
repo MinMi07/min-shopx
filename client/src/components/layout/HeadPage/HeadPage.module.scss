@@ -1,0 +1,33 @@
+.page-header {
+  height: 400px;
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-header a {
+  text-decoration: none;
+  color: var(--text_color);
+  font-size: 6rem;
+  font-weight: lighter;
+}
+
+// responsive
+// MOBILE
+@media only screen and (max-width: 25.875em) {
+  .page-header a {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 25.8751em) and (max-width: 46.188em) {
+}
+// TABLE
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.938em) {
+}
+
+// PC
+@media only screen and (min-width: 64em) {
+}

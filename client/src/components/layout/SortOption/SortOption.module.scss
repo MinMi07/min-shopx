@@ -1,0 +1,99 @@
+.sort {
+  margin-left: 30px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.sort label {
+  display: flex;
+  float: left;
+  width: 100%;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--boder-color);
+}
+
+.sort label .fream p {
+  float: left;
+  font-size: 1.6rem;
+  color: var(--text_color);
+  opacity: 0.8;
+}
+
+.sort label .fream p:first-child {
+  margin-right: 30px;
+}
+
+.sort label .fream p:last-child {
+  margin-left: 30px;
+}
+
+.sort label .fream .line {
+  content: var(--background-color);
+  opacity: 0.4;
+}
+
+.fream .selectDownt {
+  position: relative;
+  transform: translateY(25%);
+}
+
+.sort label div ion-icon {
+  font-size: 2rem;
+  margin: 0 20px;
+  opacity: 0.5;
+}
+
+.sort label div:last-child {
+  margin-right: 40px;
+}
+
+.sort-option {
+  position: relative;
+  cursor: pointer;
+}
+
+.sort-option-items {
+  display: none;
+  position: absolute;
+  font-size: 1.4rem;
+  overflow: hidden;
+  border-radius: 8px;
+  transform: translate(-10px, 30px);
+  animation: fadeIn 1s linear;
+}
+
+.sort-option-items li {
+  cursor: pointer;
+  padding: 10px 10px;
+  list-style: none;
+  background-color: var(--background-color);
+}
+
+.sort-option-items li:hover {
+  background-color: #aeafaf;
+}
+
+.icon-select--downt {
+  transition: transform 0.3s linear;
+}
+
+// responsive
+// MOBILE
+@media only screen and (max-width: 25.875em) {
+  .sideBar_content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 25.8751em) and (max-width: 46.188em) {
+}
+// TABLE
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.938em) {
+}
+
+// PC
+@media only screen and (min-width: 64em) {
+}
