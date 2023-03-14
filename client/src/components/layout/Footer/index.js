@@ -18,7 +18,7 @@ function Footer() {
           <ul>
             <img className={cx('footer_logoShop')} src={images.avatarShop} alt="logo_Shop" />
             <li>
-              <Link to="/">Hệ thống giày thể thao số 1 Hà Nội</Link>
+              <Link to="/">Hệ thống nước hoa số 1 Hà Nội</Link>
             </li>
             <li>
               <table>
@@ -52,13 +52,13 @@ function Footer() {
               <Link to="/">Hỗ trợ</Link>
             </li>
             <li>
-              <Link to="/">7 cách bảo quản giày thể thao tốt nhất</Link>
+              <Link to="/">7 cách bảo quản nước hoa tốt nhất</Link>
             </li>
             <li>
               <Link to="/">Giữ "phong độ" cho Sneaker trắng ra sao</Link>
             </li>
             <li>
-              <Link to="/">9 Kỹ thuật làm đẹp dành cho U30</Link>
+              <Link to="/">9 Kỹ thuật sử dụng nước hoa dành cho U30</Link>
             </li>
           </ul>
         </div>

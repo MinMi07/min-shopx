@@ -81,11 +81,20 @@ function BillList() {
   };
 
   const handleCountUp = (item) => {
-    updateBill({ ...item, amount: item.amount + 1 });
+    updateBill({
+      ...item,
+      amount: item.amount + 1,
+      totalPrice: item.priceBuy * (item.amount + 1)
+    });
   };
 
   const handleCountDown = (item) => {
-    if (item.amount >= 2) updateBill({ ...item, amount: item.amount - 1 });
+    if (item.amount >= 2)
+      updateBill({
+        ...item,
+        amount: item.amount - 1,
+        totalPrice: item.priceBuy * (item.amount - 1)
+      });
   };
 
   if (billsDisplay.length > 0)
